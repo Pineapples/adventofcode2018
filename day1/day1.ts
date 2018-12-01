@@ -1016,7 +1016,7 @@ const frequencies = [-10,
     +73906]
     
     // part 1
-    // console.log(frequencies.reduce((s, v) => s += v));
+    console.log(frequencies.reduce((s, v) => s += v));
     
     // part 2
     let resultFrequencies = [0];
