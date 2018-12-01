@@ -1016,7 +1016,7 @@ const frequencies = [-10,
     +73906]
     
     // part 1
-    console.log(frequencies.reduce((s, v) => s += v));
+    console.log('part 1', frequencies.reduce((s, v) => s += v));
     
     // part 2
     let resultFrequencies = [0];
@@ -1034,4 +1034,4 @@ const frequencies = [-10,
       });
     }
     
-    console.log(double);
+    console.log('part 2', double);
