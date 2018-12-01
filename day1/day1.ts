@@ -1019,18 +1019,18 @@ const frequencies = [-10,
     console.log('part 1', frequencies.reduce((s, v) => s += v));
     
     // part 2
-    let resultFrequencies = [0];
+    let resultFrequencies = new Set().add(0);
     let sum = 0;
     let double;
     
     while(!double) {
       frequencies.forEach((v, i, a) => {
         sum += v;
-        if(resultFrequencies.indexOf(sum) > 0) {
+        if(resultFrequencies.has(sum)) {
           double = sum;
           a.splice(1);
         };
-        resultFrequencies.push(sum);
+        resultFrequencies.add(sum);
       });
     }
     
